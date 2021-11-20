@@ -6,22 +6,22 @@ from django.views.generic import ListView, DetailView, CreateView, UpdateView, D
 class TrackerListView(ListView):
     template_name = 'track-list.html'
     model = Track
-    context_object_name = 'list_tracker'
-
-class TrackerCreateView(CreateView):
-    template_name = 'track-create.html'
-    model = Track
-    fields = ['title', 'description', 'purchaser']
-    success_url = reverse_lazy('track_list')
+    context_object_name = 'list_track'
 
 class TrackerDetailView(DetailView):
     template_name = 'track-detail.html'
     model = Track
 
+class TrackerCreateView(CreateView):
+    template_name = 'track-create.html'
+    model = Track
+    fields = ['title', 'category', 'description']
+    success_url = reverse_lazy('track_list')
+
 class TrackerUpdateView(UpdateView):
     template_name = 'track-update.html'
     model = Track
-    fields = ['title', 'description', 'purchaser']
+    fields = ['title',  'category', 'description']
 
 class TrackerDeleteView(DeleteView):
     template_name = 'track-delete.html'
