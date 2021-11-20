@@ -4,8 +4,10 @@ from django.urls import reverse
 
 class Track(models.Model):
     title= models.CharField(max_length=64)
+    category = models.CharField(max_length=64, null=True, blank=True)
     description = models.TextField(default='')
-    purchaser = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
+    createdAt = models.DateTimeField(auto_now_add=True)
+    # purchaser = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
 
     def __str__(self):
         return self.title
