@@ -77,11 +77,14 @@ WSGI_APPLICATION = 'tracker_project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd3fq34htcfck4n',
+        'HOST': 'ec2-54-221-74-111.compute-1.amazonaws.com',
+        'PORT': 5432,
+        'USER': 'eggudahryffkio',
+        'PASSWORD': '52fae0fa54f16e7b0ba4b400d9ac3059332f8cd89e22c3324f11f57beb3b67e7'
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
