@@ -1,1 +1,1 @@
-web: gunicorn -b 127.0.0.1:8000 tracker_project.wsgi
+web: gunicorn -b 127.0.0.1:5000 tracker_project.wsgi
