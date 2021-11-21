@@ -27,6 +27,14 @@ argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
+name = "django-crispy-forms"
+version = "1.13.0"
+description = "Best way to have Django DRY forms"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[[package]]
 name = "gunicorn"
 version = "20.1.0"
 description = "WSGI HTTP Server for UNIX"
@@ -67,7 +75,7 @@ python-versions = ">=3.5"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "953f3ed614b696b9bcb623e7694dd5cfd618045badec47d571041ed4ac8cde1d"
+content-hash = "91031fa446f08a33e4f603d36dfde950b1ef520a1c61baeaf5c22fe9ee45358d"
 
 [metadata.files]
 asgiref = [
@@ -77,6 +85,10 @@ asgiref = [
 django = [
     {file = "Django-3.2.9-py3-none-any.whl", hash = "sha256:e22c9266da3eec7827737cde57694d7db801fedac938d252bf27377cec06ed1b"},
     {file = "Django-3.2.9.tar.gz", hash = "sha256:51284300f1522ffcdb07ccbdf676a307c6678659e1284f0618e5a774127a6a08"},
+]
+django-crispy-forms = [
+    {file = "django-crispy-forms-1.13.0.tar.gz", hash = "sha256:4dc9e5263c91c5f51766806a050ca2ec5c349d34c5cd91fcca3a1a0363b5e29e"},
+    {file = "django_crispy_forms-1.13.0-py3-none-any.whl", hash = "sha256:9c49d29dd9e98dc2e6e3a8b02670d72deb6edf7bc616986ca412d72c306b36a0"},
 ]
 gunicorn = [
     {file = "gunicorn-20.1.0-py3-none-any.whl", hash = "sha256:9dcc4547dbb1cb284accfb15ab5667a0e5d1881cc443e0677b4882a4067a807e"},
