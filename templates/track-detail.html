@@ -1,6 +1,7 @@
 {% extends 'base.html'%}
 
 {% block content %}
+
     <div class="col-lg-6 offset-lg-3 mt-4">
         <h2>{{ track.title }}</h2>
         <h3>{{ track.category }}</h3>
@@ -8,4 +9,5 @@
         <a class="btn btn-primary my-3" href="{% url 'track_update' track.pk %}">Update Entry</a>
         <a class="btn btn-danger"href="{% url 'track_delete' track.pk %}">Delete Entry</a>
     </div>
+    
 {% endblock content %}
