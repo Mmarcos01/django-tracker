@@ -1,11 +1,11 @@
 {% extends 'base.html'%}
 
 {% block content %}
-    <section>
+    <div class="my-4 mx-5 w-50 p-3">
         <h2>{{ track.title }}</h2>
         <h3>{{ track.category }}</h3>
-        <p>{{ track.description }}</p>
-    </section>
-    <h3><a href="{% url 'track_update' track.pk %}">Update Entry</a></h3>
-    <h3><a href="{% url 'track_delete' track.pk %}">Delete Entry</a></h3>
+        <p class="my-4">{{ track.description }}</p>
+        <a class="btn btn-primary my-3" href="{% url 'track_update' track.pk %}">Update Entry</a>
+        <a class="btn btn-danger"href="{% url 'track_delete' track.pk %}">Delete Entry</a>
+    </div>
 {% endblock content %}

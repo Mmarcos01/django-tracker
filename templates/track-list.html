@@ -3,21 +3,24 @@
 {% block content %}
 
 <!-- <div class="mx-auto" style="width: 400px;"> -->
-    <h1>List of Entries</h1>
-
-    <a class="btn btn-primary" href="{% url 'track_create' %}">Add a New Entry</a>
+  <div class="col-lg-6 offset-lg-3">
+    <div class="my-4 mx-5">
+        <h1>List of Entries</h1>
+        <a class="btn btn-primary my-3" href="{% url 'track_create' %}">Add a New Entry</a>
+    </div>
+    
     <ul>
     {% for track in list_track %}
-        <!-- <li><a href="{% url 'track_detail' track.pk %}">{{ track.title }}</a></li> -->
-        <div class="card" style="width: 18rem;">
+        <div class="card bg-light mb-3 mx-2" style="width: 18rem; display:inline-block">
+            <div class="card-header"><h5>{{ track.title }}</h5></div>
           <div class="card-body">
-            <h5>{{ track.title }}</h5>
             <p class="card-text">{{ track.category }}</p>
             <a href="{% url 'track_detail' track.pk %}" class="btn btn-secondary">View Details</a>
           </div>
         </div>
     {% endfor %}
     </ul>
+  </div>
 
 
 <!-- </div> -->
