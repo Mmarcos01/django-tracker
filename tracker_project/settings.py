@@ -86,11 +86,11 @@ WSGI_APPLICATION = 'tracker_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd3fq34htcfck4n',
-        'HOST': 'ec2-54-221-74-111.compute-1.amazonaws.com',
-        'PORT': 5432,
-        'USER': 'eggudahryffkio',
-        'PASSWORD': '52fae0fa54f16e7b0ba4b400d9ac3059332f8cd89e22c3324f11f57beb3b67e7'
+        'NAME': env('DATABASE_NAME'),
+        'HOST': env('DATABASE_HOST'),
+        'PORT': env('DATABASE_PORT'),
+        'USER': env('DATABASE_USER'),
+        'PASSWORD': env('DATABASE_PASSWORD'),
     }
 }
 
