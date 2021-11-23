@@ -35,6 +35,19 @@ optional = false
 python-versions = ">=3.6"
 
 [[package]]
+name = "django-environ"
+version = "0.8.1"
+description = "A package that allows you to utilize 12factor inspired environment variables to configure your Django application."
+category = "main"
+optional = false
+python-versions = ">=3.4,<4"
+
+[package.extras]
+develop = ["coverage[toml] (>=5.0a4)", "pytest (>=4.6.11)", "furo (>=2021.8.17b43,<2021.9.0)", "sphinx (>=3.5.0)", "sphinx-notfound-page"]
+docs = ["furo (>=2021.8.17b43,<2021.9.0)", "sphinx (>=3.5.0)", "sphinx-notfound-page"]
+testing = ["coverage[toml] (>=5.0a4)", "pytest (>=4.6.11)"]
+
+[[package]]
 name = "gunicorn"
 version = "20.1.0"
 description = "WSGI HTTP Server for UNIX"
@@ -75,7 +88,7 @@ python-versions = ">=3.5"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "91031fa446f08a33e4f603d36dfde950b1ef520a1c61baeaf5c22fe9ee45358d"
+content-hash = "38d05da59933c44191468665d0e6f5b4d0e322c5bec4923050ca87986c94fbcf"
 
 [metadata.files]
 asgiref = [
@@ -89,6 +102,10 @@ django = [
 django-crispy-forms = [
     {file = "django-crispy-forms-1.13.0.tar.gz", hash = "sha256:4dc9e5263c91c5f51766806a050ca2ec5c349d34c5cd91fcca3a1a0363b5e29e"},
     {file = "django_crispy_forms-1.13.0-py3-none-any.whl", hash = "sha256:9c49d29dd9e98dc2e6e3a8b02670d72deb6edf7bc616986ca412d72c306b36a0"},
+]
+django-environ = [
+    {file = "django-environ-0.8.1.tar.gz", hash = "sha256:6f0bc902b43891656b20486938cba0861dc62892784a44919170719572a534cb"},
+    {file = "django_environ-0.8.1-py2.py3-none-any.whl", hash = "sha256:42593bee519a527602a467c7b682aee1a051c2597f98c45f4f4f44169ecdb6e5"},
 ]
 gunicorn = [
     {file = "gunicorn-20.1.0-py3-none-any.whl", hash = "sha256:9dcc4547dbb1cb284accfb15ab5667a0e5d1881cc443e0677b4882a4067a807e"},
