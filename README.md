@@ -3,7 +3,7 @@
 An entry tracking CRUD application built with Python, deployed on [Heroku](https://dashboard.heroku.com/).
 
 ### Deployed at: 
-[intense-cove-57839.herokuapp.com/](intense-cove-57839.herokuapp.com/)
+[https://intense-cove-57839.herokuapp.com](https://intense-cove-57839.herokuapp.com)
 
 ### Feature Tasks: 
 - Create django model for entries and register model with admin.
@@ -19,8 +19,8 @@ An entry tracking CRUD application built with Python, deployed on [Heroku](https
 
 ### Running this project locally:
 
-     - clone the repo 
-     - run 'poetry install'
+    - clone the repo 
+    - run 'poetry install'
     - enter virtual environment with 'poetry shell'
     - adjust environment variables to your local machine
     - run 'python manage py runserver'
